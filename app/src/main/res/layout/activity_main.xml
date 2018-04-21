@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnTab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAB1"/>
+
+        <Button
+            android:id="@+id/btnTab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnTab1"
+            android:text="TAB2"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout_for_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:text="FRAME LAYOUT"/>
+
+        <fragment
+            android:name="com.example.user.lab3_3.Fragment1"
+            android:id="@+id/fragment1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <fragment
+            android:name="com.example.user.lab3_3.Fragment2"
+            android:id="@+id/fragment2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
